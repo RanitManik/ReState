@@ -1,4 +1,5 @@
 import {
+    ActivityIndicator,
     Alert,
     Image,
     SafeAreaView,
@@ -20,14 +21,21 @@ const SignIn = () => {
     const handleLogin = async () => {
         const result = await login();
 
-        if (!loading && isLoggedIn) return <Redirect href="/" />;
-
         if (result) {
             refetch();
         } else {
             Alert.alert("login error");
         }
     };
+
+    if (loading)
+        return (
+            <SafeAreaView className="flex h-full items-center justify-center bg-white">
+                <ActivityIndicator className="text-primary" size="large" />
+            </SafeAreaView>
+        );
+
+    if (!loading && isLoggedIn) return <Redirect href="/" />;
 
     return (
         <SafeAreaView className="h-full bg-white">

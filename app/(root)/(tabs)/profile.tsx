@@ -75,7 +75,7 @@ const Profile = () => {
                     <View className="relative mt-5 flex flex-col items-center">
                         <Image
                             source={{ uri: user?.avatar }}
-                            className="relative size-44 rounded-full border border-gray-300"
+                            className="relative size-44 rounded-full border border-accent bg-accent"
                         />
                         <TouchableOpacity className="absolute bottom-11 right-2">
                             <Image source={icons.edit} className="size-9" />
