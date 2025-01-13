@@ -86,7 +86,7 @@ const Property = () => {
 
                     <View className="flex flex-row items-center gap-3">
                         <View className="flex flex-row items-center rounded-full bg-primary-100 px-4 py-2">
-                            <Text className="text-primary font-rubik-bold text-xs">
+                            <Text className="font-rubik-bold text-xs text-primary">
                                 {property?.type}
                             </Text>
                         </View>
@@ -264,7 +264,7 @@ const Property = () => {
                                 </View>
 
                                 <TouchableOpacity>
-                                    <Text className="text-primary font-rubik-bold text-base">
+                                    <Text className="font-rubik-bold text-base text-primary">
                                         View All
                                     </Text>
                                 </TouchableOpacity>
@@ -286,13 +286,13 @@ const Property = () => {
                         </Text>
                         <Text
                             numberOfLines={1}
-                            className="text-primary text-start font-rubik-bold text-2xl"
+                            className="text-start font-rubik-bold text-2xl text-primary"
                         >
                             ${property?.price}
                         </Text>
                     </View>
 
-                    <TouchableOpacity className="bg-primary flex flex-1 flex-row items-center justify-center rounded-full py-3 shadow-md shadow-zinc-400">
+                    <TouchableOpacity className="flex flex-1 flex-row items-center justify-center rounded-full bg-primary py-3 shadow-md shadow-zinc-400">
                         <Text className="text-center font-rubik-bold text-lg text-white">
                             Book Now
                         </Text>
