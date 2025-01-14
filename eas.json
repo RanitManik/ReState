@@ -11,11 +11,7 @@
         "preview": {
             "distribution": "internal"
         },
-        "production": {
-            "cli": {
-                "appVersionSource": "remote"
-            }
-        }
+        "production": {}
     },
     "submit": {
         "production": {}
